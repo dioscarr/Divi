@@ -1,0 +1,42 @@
+{
+  "schema": "bdstar-divi5-modules-v1",
+  "source_export": "bdstar-footer-v5.json",
+  "layout_id": "73",
+  "notes": [
+    "Edit .divi files as raw Divi 5 Gutenberg block markup.",
+    "Do not JSON-round-trip module attrs; preserve Divi 5 nested module/advanced/decoration structure.",
+    "Run tools/divi_modules.py compile --page <name> after edits and validate before import."
+  ],
+  "parts": [
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "<!-- wp:divi/placeholder -->",
+      "label": null
+    },
+    {
+      "kind": "section",
+      "file": "sections/01-section.divi",
+      "text": null,
+      "label": "section"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "\n\n",
+      "label": null
+    },
+    {
+      "kind": "section",
+      "file": "sections/02-section.divi",
+      "text": null,
+      "label": "section"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "<!-- /wp:divi/placeholder -->",
+      "label": null
+    }
+  ]
+}

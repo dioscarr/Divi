@@ -1,0 +1,54 @@
+{
+  "schema": "bdstar-divi5-modules-v1",
+  "source_export": "bdstar-about-v5.json",
+  "layout_id": "2",
+  "notes": [
+    "Edit .divi files as raw Divi 5 Gutenberg block markup.",
+    "Do not JSON-round-trip module attrs; preserve Divi 5 nested module/advanced/decoration structure.",
+    "Run tools/divi_modules.py compile --page <name> after edits and validate before import."
+  ],
+  "parts": [
+    {
+      "kind": "section",
+      "file": "sections/01-about-split-hero.divi",
+      "text": null,
+      "label": "About Hero Slider"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "\n\n",
+      "label": null
+    },
+    {
+      "kind": "section",
+      "file": "sections/02-about-story-premium-split.divi",
+      "text": null,
+      "label": "About Story — Premium Split"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "\n\n",
+      "label": null
+    },
+    {
+      "kind": "section",
+      "file": "sections/03-guest-trust-testimonial-section.divi",
+      "text": null,
+      "label": "Guest Trust & Testimonial Section"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "\n\n\n\n",
+      "label": null
+    },
+    {
+      "kind": "section",
+      "file": "sections/04-about-cta.divi",
+      "text": null,
+      "label": "About CTA"
+    }
+  ]
+}

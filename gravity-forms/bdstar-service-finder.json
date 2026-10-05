@@ -1,0 +1,253 @@
+[
+  {
+    "title": "BD Star Service Finder",
+    "description": "Guided transportation questionnaire for airport, hotel, tour, and private-driver requests.",
+    "labelPlacement": "top_label",
+    "descriptionPlacement": "below",
+    "button": {
+      "type": "text",
+      "text": "Request This Service"
+    },
+    "fields": [
+      {
+        "type": "radio",
+        "id": 1,
+        "label": "What transportation do you need?",
+        "adminLabel": "Service Path",
+        "isRequired": true,
+        "choices": [
+          {
+            "text": "Airport arrival or departure",
+            "value": "airport"
+          },
+          {
+            "text": "Hotel or point-to-point transfer",
+            "value": "hotel"
+          },
+          {
+            "text": "Tour or excursion transportation",
+            "value": "tour"
+          },
+          {
+            "text": "Private driver or special group",
+            "value": "private"
+          },
+          {
+            "text": "I am not sure",
+            "value": "unsure"
+          }
+        ]
+      },
+      {
+        "type": "page",
+        "id": 2,
+        "label": "Service Details",
+        "nextButton": {
+          "type": "text",
+          "text": "Continue"
+        },
+        "previousButton": {
+          "type": "text",
+          "text": "Back"
+        }
+      },
+      {
+        "type": "select",
+        "id": 3,
+        "label": "Airport trip type",
+        "choices": [
+          {
+            "text": "Arrival",
+            "value": "arrival"
+          },
+          {
+            "text": "Departure",
+            "value": "departure"
+          },
+          {
+            "text": "Round Trip",
+            "value": "round_trip"
+          }
+        ],
+        "conditionalLogic": {
+          "actionType": "show",
+          "logicType": "any",
+          "rules": [
+            {
+              "fieldId": "1",
+              "operator": "is",
+              "value": "airport"
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "id": 4,
+        "label": "Airport and flight number",
+        "conditionalLogic": {
+          "actionType": "show",
+          "logicType": "any",
+          "rules": [
+            {
+              "fieldId": "1",
+              "operator": "is",
+              "value": "airport"
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "id": 5,
+        "label": "Pickup location",
+        "conditionalLogic": {
+          "actionType": "show",
+          "logicType": "any",
+          "rules": [
+            {
+              "fieldId": "1",
+              "operator": "is",
+              "value": "hotel"
+            },
+            {
+              "fieldId": "1",
+              "operator": "is",
+              "value": "tour"
+            },
+            {
+              "fieldId": "1",
+              "operator": "is",
+              "value": "private"
+            },
+            {
+              "fieldId": "1",
+              "operator": "is",
+              "value": "unsure"
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "id": 6,
+        "label": "Destination or places you want to visit"
+      },
+      {
+        "type": "select",
+        "id": 7,
+        "label": "Trip format",
+        "choices": [
+          {
+            "text": "One Way",
+            "value": "one_way"
+          },
+          {
+            "text": "Round Trip",
+            "value": "round_trip"
+          },
+          {
+            "text": "Multiple Stops",
+            "value": "multiple_stops"
+          },
+          {
+            "text": "Hourly Driver",
+            "value": "hourly_driver"
+          }
+        ]
+      },
+      {
+        "type": "number",
+        "id": 8,
+        "label": "Passengers",
+        "isRequired": true
+      },
+      {
+        "type": "number",
+        "id": 9,
+        "label": "Pieces of luggage"
+      },
+      {
+        "type": "checkbox",
+        "id": 10,
+        "label": "Additional needs",
+        "choices": [
+          {
+            "text": "Child Seats",
+            "value": "child_seats"
+          },
+          {
+            "text": "Accessible Vehicle",
+            "value": "accessible_vehicle"
+          },
+          {
+            "text": "Large Luggage Capacity",
+            "value": "large_luggage_capacity"
+          },
+          {
+            "text": "Multiple Vehicles",
+            "value": "multiple_vehicles"
+          }
+        ]
+      },
+      {
+        "type": "page",
+        "id": 11,
+        "label": "Trip and Contact Information",
+        "nextButton": {
+          "type": "text",
+          "text": "Review Request"
+        },
+        "previousButton": {
+          "type": "text",
+          "text": "Back"
+        }
+      },
+      {
+        "type": "date",
+        "id": 12,
+        "label": "Travel date",
+        "isRequired": true
+      },
+      {
+        "type": "time",
+        "id": 13,
+        "label": "Pickup time"
+      },
+      {
+        "type": "name",
+        "id": 14,
+        "label": "Name",
+        "isRequired": true
+      },
+      {
+        "type": "email",
+        "id": 15,
+        "label": "Email",
+        "isRequired": true
+      },
+      {
+        "type": "phone",
+        "id": 16,
+        "label": "WhatsApp or phone number",
+        "isRequired": true
+      },
+      {
+        "type": "textarea",
+        "id": 17,
+        "label": "Anything else we should know?"
+      }
+    ],
+    "confirmations": [
+      {
+        "id": "bdstar_confirmation",
+        "name": "Default Confirmation",
+        "isDefault": true,
+        "type": "message",
+        "message": "Thank you. We received your transportation request and will contact you shortly."
+      }
+    ],
+    "notifications": [],
+    "version": "2.9"
+  }
+]

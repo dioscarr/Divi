@@ -1,0 +1,72 @@
+{
+  "schema": "bdstar-divi5-modules-v1",
+  "source_export": "bdstar-home-v5.json",
+  "layout_id": "2",
+  "notes": [
+    "Edit .divi files as raw Divi 5 Gutenberg block markup.",
+    "Do not JSON-round-trip module attrs; preserve Divi 5 nested module/advanced/decoration structure.",
+    "Run tools/divi_modules.py compile --page <name> after edits and validate before import."
+  ],
+  "parts": [
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "<!-- wp:divi/placeholder -->",
+      "label": null
+    },
+    {
+      "kind": "section",
+      "file": "sections/01-hero.divi",
+      "text": null,
+      "label": "Hero"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "\r\n\r\n",
+      "label": null
+    },
+    {
+      "kind": "section",
+      "file": "sections/02-legacy-premium-services.divi",
+      "text": null,
+      "label": "Legacy Premium Services"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "\r\n\r\n",
+      "label": null
+    },
+    {
+      "kind": "section",
+      "file": "sections/03-home-photo-gallery.divi",
+      "text": null,
+      "label": "Home Photo Gallery"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "\r\n\r\n",
+      "label": null
+    },
+    {
+      "kind": "section",
+      "file": "sections/03-service-section.divi",
+      "text": null,
+      "label": "Service Section"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "\r\n\r\n",
+      "label": null
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "<!-- /wp:divi/placeholder -->",
+      "label": null
+    }
+  ]
+}

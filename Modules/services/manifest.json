@@ -1,0 +1,120 @@
+{
+  "schema": "bdstar-divi5-modules-v1",
+  "source_export": "bdstar-services-v5.json",
+  "layout_id": "2",
+  "notes": [
+    "Edit .divi files as raw Divi 5 Gutenberg block markup.",
+    "Do not JSON-round-trip module attrs; preserve Divi 5 nested module/advanced/decoration structure.",
+    "Run tools/divi_modules.py compile --page <name> after edits and validate before import."
+  ],
+  "parts": [
+    {
+      "kind": "section",
+      "file": "sections/01-services-split-hero.divi",
+      "text": null,
+      "label": "Services Split Hero"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "\n\n",
+      "label": null
+    },
+    {
+      "kind": "section",
+      "file": "sections/02-service-finder-workflow.divi",
+      "text": null,
+      "label": "Service Finder Workflow"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "\n\n\n",
+      "label": null
+    },
+    {
+      "kind": "section",
+      "file": "sections/02-airport-transfers-section.divi",
+      "text": null,
+      "label": "Airport Transfers Section"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "\n\n\n\n",
+      "label": null
+    },
+    {
+      "kind": "section",
+      "file": "sections/03-family-trips-section.divi",
+      "text": null,
+      "label": "Family Trips Section"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "\n\n\n\n",
+      "label": null
+    },
+    {
+      "kind": "section",
+      "file": "sections/04-tours-excursions-section.divi",
+      "text": null,
+      "label": "Tours & Excursions Section"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "\n\n\n",
+      "label": null
+    },
+    {
+      "kind": "section",
+      "file": "sections/05-included-with-every-ride-section.divi",
+      "text": null,
+      "label": "Included With Every Ride Section"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "\n\r\n\r\n",
+      "label": null
+    },
+    {
+      "kind": "section",
+      "file": "sections/06-trust-numbers-section.divi",
+      "text": null,
+      "label": "Trust Numbers Section"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "\n\r\n\r\n",
+      "label": null
+    },
+    {
+      "kind": "section",
+      "file": "sections/07-services-cta.divi",
+      "text": null,
+      "label": "Services CTA"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "\n\n\n",
+      "label": null
+    },
+    {
+      "kind": "section",
+      "file": "sections/08-faq-section.divi",
+      "text": null,
+      "label": "FAQ Section"
+    },
+    {
+      "kind": "raw",
+      "file": null,
+      "text": "\n\n",
+      "label": null
+    }
+  ]
+}
