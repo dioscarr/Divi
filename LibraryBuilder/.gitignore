@@ -1,0 +1,3 @@
+# Generated design corpus
+library/components/*
+!library/components/.gitkeep
