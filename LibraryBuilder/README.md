@@ -10,8 +10,11 @@ It deliberately does **not** replace `Modules/` or the existing site tooling. Th
 # Ingest an authorized Divi JSON export
 python3 LibraryBuilder/cli.py ingest /path/to/layout.json --source-name "DiviWP Landing Pack"
 
-# Search the generated catalog
-python3 LibraryBuilder/cli.py search "hero"
+# Search the generated catalog with natural-language terms
+python3 LibraryBuilder/cli.py search "dark mobile hero with CTA"
+
+# Search with structured filters when you know the constraint
+python3 LibraryBuilder/cli.py search "category:hero feature:image responsive"
 
 # Validate every stored component against its hash and Divi block balance
 python3 LibraryBuilder/cli.py validate
@@ -34,7 +37,9 @@ LibraryBuilder/
           metadata.json
 ```
 
-The original section markup is canonical. Ingestion calculates SHA-256 before storing it, so exact duplicate sections are skipped. Metadata records source provenance, category, features, and validation state.
+The original section markup is canonical. Ingestion calculates SHA-256 before storing it, so exact duplicate sections are skipped. Metadata records source provenance, category, module types, responsive/content/visual signals, searchable terms, features, and validation state. The schema is versioned as `divi-library-component-v2`.
+
+Search expands common design language into library terms: `banner` maps to hero, `phone` to responsive/mobile, `action` to CTA/button, `photo` to image/gallery, and `carousel` to slider. Results are ranked by matched terms and include `score` and `matched_terms` for explainability.
 
 ## Tonight's workflow
 

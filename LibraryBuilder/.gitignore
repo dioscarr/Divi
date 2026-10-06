@@ -1,3 +1,6 @@
 # Generated design corpus
 library/components/*
 !library/components/.gitkeep
+
+# Local Python bytecode
+__pycache__/
